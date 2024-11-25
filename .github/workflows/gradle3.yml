@@ -24,12 +24,13 @@ jobs:
       #  uses: gradle/gradle-build-action@v2
 
       # Generate Gradle Wrapper if it doesn't exist
-      - name: Generate Gradle Wrapper
-        run: gradle wrapper
+      #- name: Generate Gradle Wrapper
+      #  run: gradle wrapper
 
       # Build the project using the Gradle Wrapper
       - name: Build with Gradle Wrapper
         run: |
+          gradle wrapper 
           ./gradlew assembleDebug
 
       # Find and copy the APK file
