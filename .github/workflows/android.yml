@@ -35,7 +35,7 @@ jobs:
       # Find and copy the APK file
       - name: Find and copy APK
         run: |
-          file=$(find . -name "*.apk" | head -n 1)
+          file=$(find . -name "*.apk" | head  -n 1)
           cp "$file" app-debug.apk
 
       # Upload the APK file
