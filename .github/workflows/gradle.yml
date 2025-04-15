@@ -38,7 +38,7 @@ jobs:
         
       
     - name: Upload APK
-      uses: actions/upload-artifact@v3  # Aktualisiert auf v3
+      uses: actions/upload-artifact@v4  # Aktualisiert auf v4
       with:
         name: app-debug.apk
         path: /home/runner/app-debug.apk
