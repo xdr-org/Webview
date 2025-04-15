@@ -38,7 +38,7 @@ jobs:
     - name: Build with Gradle
       run: |
         chmod +x gradlew
-        ./gradlew assembleDebug --stacktrace
+        ./gradlew build --stacktrace
         echo ">>---------------"
         find . -name "*.apk"
         echo "---------------<<"
