@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
             public void onAvailable(Network network) {
                 runOnUiThread(() -> {
                     if (!mWebView.getUrl().startsWith("file:///android_asset")) {
-                        mWebView.loadUrl("http://100.96.1.2:8080/client10.4.html");
+                        mWebView.loadUrl("http://cqyrzb5zj37sofxwsnxuiaenn4zfyztyoshsyevalh42ri76kmq3kbyd.onion");
                     }
                 });
             }
